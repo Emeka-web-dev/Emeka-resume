@@ -18,8 +18,8 @@ const Projects = ({ projects }: Props) => {
       <h3 className=" uppercase tracking-[10px] text-gray-500 text-xl pt-16">
         projects
       </h3>
-      <div className="w-full absolute top-[30%] left-0 h-[300px] bg-[#cc5223]/20 -skew-y-12" />
-      <div className="w-full h-[83%] flex overflow-x-auto snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin">
+      <div className="w-full absolute top-[35%] left-0 h-[300px] bg-[#cc5223]/20 -skew-y-12" />
+      <div className="w-full h-[83%] flex items-center justify-center overflow-x-auto snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin">
         {projects.map((project, i) => (
           <div
             key={i}

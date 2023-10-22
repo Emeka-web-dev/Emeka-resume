@@ -17,7 +17,7 @@ export default function About({pageInfo}: Props) {
       <h3 className="pt-12 uppercase tracking-[10px] text-gray-500 text-xl">
         About
       </h3>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 h-full">
         <FramerContainer
           initial={{
             x: -200,
@@ -42,7 +42,7 @@ export default function About({pageInfo}: Props) {
           <h4 className="text-2xl font-semibold">
             Here is a little background
           </h4>
-          <p className="text-sm ">
+          <p className="overflow-y-auto h-[90%] scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin">
             {pageInfo.backgroundInfo}
           </p>
         </div>
