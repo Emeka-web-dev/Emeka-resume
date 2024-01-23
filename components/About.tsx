@@ -38,14 +38,24 @@ export default function About({ pageInfo }: Props) {
             className="object-cover rounded-full md:rounded-lg"
           />
         </FramerContainer>
-        <div className="space-y-2 md:space-y-4 px-0 md:px-8">
+        <FramerContainer
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}
+          className="space-y-2 md:space-y-4 px-0 md:px-8"
+        >
           <h4 className="text-2xl font-semibold">
             Here is a little background
           </h4>
           <p className="overflow-y-auto max-h-[90%] scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin">
             {pageInfo.backgroundInfo}
           </p>
-        </div>
+        </FramerContainer>
       </div>
     </FramerContainer>
   );

@@ -6,34 +6,31 @@ import { Image as SkillImage } from "@/typings";
 
 type Props = {
   image: SkillImage;
-  progress: number;
+  number: number;
+  total: number;
 };
-const Skill = ({ image, progress }: Props) => {
+const Skill = ({ image, number, total }: Props) => {
+  const isNumber = Math.ceil(total / 2) > number;
+  console.log({ isNumber });
   return (
     <FramerContainer
       initial={{
         opacity: 0,
+        x: isNumber ? -200 : 200,
       }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="group relative flex cursor-pointer"
+      className="group relative flex cursor-pointer grayscale"
     >
-      <div className="relative w-16 md:w-20 h-16 md:h-20 group-hover:grayscale transition duration-300 ease-in-out filter">
+      <div className="relative w-16 md:w-20 h-16 md:h-20 group-hover:grayscale-0 transition duration-300 ease-in-out filter">
         <Image
           src={urlForImage(image).url()}
           alt="image"
           layout="fill"
-          className="object-cover  p-3"
+          className="object-cover"
         />
       </div>
-      {/* <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white z-0 h-16 w-16 md:w-20 md:h-20 rounded-full">
-        <div className="flex items-center justify-center h-full">
-          <p className="text-black font-bold opacity-100 md:text-xl">
-            {progress}
-          </p>
-        </div>
-      </div> */}
     </FramerContainer>
   );
 };

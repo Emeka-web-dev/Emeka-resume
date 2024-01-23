@@ -8,6 +8,7 @@ type Props = {
   projects: Project[];
 };
 const Projects = ({ projects }: Props) => {
+  console.log({ projects });
   return (
     <FramerContainer
       initial={{ opacity: 0 }}
@@ -19,7 +20,7 @@ const Projects = ({ projects }: Props) => {
         projects
       </h3>
       <div className="w-full absolute top-[35%] left-0 h-[300px] bg-[#cc5223]/20 -skew-y-12" />
-      <div className="w-full h-[83%] flex items-center justify-center overflow-x-auto snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin">
+      <div className="w-full h-[83%] flex items-center overflow-x-auto snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin">
         {projects.map((project, i) => (
           <div
             key={i}

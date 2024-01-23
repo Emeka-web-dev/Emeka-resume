@@ -15,11 +15,12 @@ const Skills = ({ skills }: Props) => {
       </h3>
       <div className="w-full h-[80%]  flex items-center justify-center">
         <div className="grid grid-cols-4 gap-4">
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <Skill
+              number={index}
+              total={skills.length}
               key={skill.title}
               image={skill.image}
-              progress={skill.progress}
             />
           ))}
         </div>

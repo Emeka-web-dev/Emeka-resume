@@ -14,7 +14,7 @@ export default function ExperienceCard({ experience }: Props) {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="relative w-28 h-28 xl:w-[200px] xl:h-[200px]"
+        className="relative w-28 h-28 xl:w-[160px] xl:h-[160px]"
       >
         <Image
           src={urlForImage(experience.companyImage).url()}

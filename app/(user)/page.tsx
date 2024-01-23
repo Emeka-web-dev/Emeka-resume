@@ -36,15 +36,16 @@ export default async function Home() {
       <section id="about" className="snap-center">
         <About pageInfo={pageInfo} />
       </section>
+      <section id="projects" className="snap-center">
+        <Projects projects={projects} />
+      </section>
       <section id="experience" className="snap-center">
         <WorkExperience experiences={experiences} />
       </section>
       <section id="skills" className="snap-center">
         <Skills skills={skills} />
       </section>
-      <section id="projects" className="snap-center">
-        <Projects projects={projects} />
-      </section>
+
       <section id="contact" className="snap-center">
         <ContactMe pageInfo={pageInfo} />
       </section>
