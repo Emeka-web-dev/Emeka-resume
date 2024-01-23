@@ -6,9 +6,9 @@ type Props = {
   experience: Experience;
 };
 
-export default function ExperienceCard({experience}: Props) {
+export default function ExperienceCard({ experience }: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-4 flex-shrink-0 w-full md:w-[400px] h-[88%] snap-center bg-[#292929] hover:opacity-100 opacity-70 cursor-pointer p-6 md:p-10 transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-4 flex-shrink-0 w-full md:w-[400px] h-[88%] snap-center bg-[#292929] hover:opacity-100 opacity-70 cursor-pointer mb-10 p-5 transition-opacity duration-200 overflow-hidden">
       <FramerContainer
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

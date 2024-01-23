@@ -34,11 +34,11 @@ export const experienceQuery = groq`
     companyImage,
     points,
 }
-`
+`;
 export const skillQuery = groq`
     *[_type == "skill"]{
     image,
     progress,
     title,  
 }
-`
+`;

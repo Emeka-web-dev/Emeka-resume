@@ -56,7 +56,7 @@ function ContactMe({ pageInfo }: Props) {
           I have got just what you need.{" "}
           <span className="underline decoration-[#cc5223]">Lets talk</span>
         </h4>
-        <div className="">
+        <div className="flex flex-col space-y-3">
           <div className="flex items-center space-x-2 justify-center">
             <PhoneIcon className="w-6 h-6 animate-pulse text-[#cc5223]" />
             <p className="text-lg">{pageInfo.phoneNumber}</p>
@@ -83,7 +83,7 @@ function ContactMe({ pageInfo }: Props) {
             />
             <input
               {...register("phoneNumber")}
-              type="number"
+              type="phone"
               placeholder="Phone"
               className="contactInput"
             />
