@@ -51,7 +51,7 @@ function ContactMe({ pageInfo }: Props) {
       <h3 className=" uppercase tracking-[10px] text-gray-500 text-xl pt-20">
         Contact
       </h3>
-      <div className="flex flex-col items-center justify-center h-full space-y-2">
+      <div className="flex flex-col items-center h-full space-y-2">
         <h4 className="text-2xl font-semibold text-center py-2">
           I have got just what you need.{" "}
           <span className="underline decoration-[#cc5223]">Lets talk</span>
