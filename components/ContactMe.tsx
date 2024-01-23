@@ -51,7 +51,7 @@ function ContactMe({ pageInfo }: Props) {
       <h3 className=" uppercase tracking-[10px] text-gray-500 text-xl pt-20">
         Contact
       </h3>
-      <div className="flex flex-col items-center h-full space-y-2">
+      <div className="flex flex-col items-center justify-center h-full space-y-2">
         <h4 className="text-2xl font-semibold text-center py-2">
           I have got just what you need.{" "}
           <span className="underline decoration-[#cc5223]">Lets talk</span>
@@ -72,9 +72,9 @@ function ContactMe({ pageInfo }: Props) {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 md:mx-auto py-2 md:py-5 w-full px-3"
+          className="flex flex-col space-y-4 md:mx-auto py-2 md:py-5 w-full px-3"
         >
-          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
+          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <input
               {...register("name")}
               type="text"

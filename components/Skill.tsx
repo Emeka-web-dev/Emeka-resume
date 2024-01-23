@@ -24,16 +24,16 @@ const Skill = ({ image, progress }: Props) => {
           src={urlForImage(image).url()}
           alt="image"
           layout="fill"
-          className="object-cover rounded-full"
+          className="object-cover  p-3"
         />
       </div>
-      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white z-0 h-16 w-16 md:w-20 md:h-20 rounded-full">
+      {/* <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white z-0 h-16 w-16 md:w-20 md:h-20 rounded-full">
         <div className="flex items-center justify-center h-full">
           <p className="text-black font-bold opacity-100 md:text-xl">
             {progress}
           </p>
         </div>
-      </div>
+      </div> */}
     </FramerContainer>
   );
 };

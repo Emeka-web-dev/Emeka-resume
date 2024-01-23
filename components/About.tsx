@@ -17,7 +17,7 @@ export default function About({ pageInfo }: Props) {
       <h3 className="pt-12 uppercase tracking-[10px] text-gray-500 text-xl">
         About
       </h3>
-      <div className="flex flex-col md:flex-row items-center md:justify-center gap-4 gap-y-10">
+      <div className="flex flex-col h-full md:flex-row items-center md:justify-center gap-4 gap-y-10">
         <FramerContainer
           initial={{
             x: -200,
