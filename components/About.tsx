@@ -6,18 +6,18 @@ type Props = {
   pageInfo: PageInfo;
 };
 
-export default function About({pageInfo}: Props) {
+export default function About({ pageInfo }: Props) {
   return (
     <FramerContainer
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex flex-col text-center md:text-left max-w-6xl px-6 mx-auto items-center gap-6"
+      className="h-screen flex flex-col text-center md:text-left max-w-6xl px-6 mx-auto items-center gap-y-6"
     >
       <h3 className="pt-12 uppercase tracking-[10px] text-gray-500 text-xl">
         About
       </h3>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 h-full">
+      <div className="flex flex-col md:flex-row items-center md:justify-center gap-4 gap-y-10">
         <FramerContainer
           initial={{
             x: -200,
@@ -42,7 +42,7 @@ export default function About({pageInfo}: Props) {
           <h4 className="text-2xl font-semibold">
             Here is a little background
           </h4>
-          <p className="overflow-y-auto h-[90%] scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin">
+          <p className="overflow-y-auto max-h-[90%] scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin">
             {pageInfo.backgroundInfo}
           </p>
         </div>

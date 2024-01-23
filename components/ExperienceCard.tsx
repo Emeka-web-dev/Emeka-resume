@@ -23,9 +23,11 @@ export default function ExperienceCard({ experience }: Props) {
           className="object-cover rounded-full"
         />
       </FramerContainer>
-      <div className="px-0 md:px-8">
-        <div className="text-center py-3">
-          <h4 className="text-2xl font-light">{experience.company}</h4>
+      <div className="px-0 md:px-8 flex flex-col space-y-4">
+        <div className="text-center space-y-2">
+          <h4 className="text-3xl font-light uppercase">
+            {experience.company}
+          </h4>
           <p className="font-bold text-xl ">{experience.jobTitle}</p>
         </div>
         <ul className="list-disc space-y-2 ml-5 text-sm">

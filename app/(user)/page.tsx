@@ -23,7 +23,6 @@ import { Experience, PageInfo, Project, Skill, Social } from "@/typings";
 export const revalidate = 60;
 export default async function Home() {
   const pageInfo: PageInfo = await client.fetch(pageInfoQuery);
-  console.log({ pageInfo });
   const socials: Social[] = await client.fetch(socialQuery);
   const projects: Project[] = await client.fetch(projectQuery);
   const experiences: Experience[] = await client.fetch(experienceQuery);
