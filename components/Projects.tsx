@@ -8,7 +8,6 @@ type Props = {
   projects: Project[];
 };
 const Projects = ({ projects }: Props) => {
-  console.log({ projects });
   return (
     <FramerContainer
       initial={{ opacity: 0 }}

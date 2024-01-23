@@ -11,7 +11,6 @@ type Props = {
 };
 const Skill = ({ image, number, total }: Props) => {
   const isNumber = Math.ceil(total / 2) > number;
-  console.log({ isNumber });
   return (
     <FramerContainer
       initial={{
